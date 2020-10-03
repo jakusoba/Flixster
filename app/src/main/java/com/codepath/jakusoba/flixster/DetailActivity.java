@@ -1,4 +1,4 @@
-package com.codepath.jakusoba.flixster;
+package com.codepath.jakusoba.flixster
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
