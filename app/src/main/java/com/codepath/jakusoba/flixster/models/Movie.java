@@ -10,6 +10,7 @@ import java.util.List;
 
 @Parcel
 public class Movie {
+    int movieId;
     String posterPath;
     String title;
     String overview;
@@ -29,6 +30,7 @@ public class Movie {
         overview = jsonObject.getString("overview");
         backdropPath = jsonObject.getString("backdrop_path");
         rating = jsonObject.getDouble("vote_average");
+        movieId = jsonObject.getInt("id");
     }
 
     /*Create a static method returning list of movie from JSONArray, movieJSONArray is the data we got back.*/
@@ -67,6 +69,9 @@ public class Movie {
 
     public double getRating() {
         return rating;
+    }
+    public int getMovieId() {
+        return movieId;
     }
 
 }
